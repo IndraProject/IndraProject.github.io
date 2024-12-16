@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 
-<body x-data="{ isOpenCat: false,  isOpenCart: false }">
+<body x-data="{ isOpenCat: false,  isOpenCart: false }" class="">
+    
     <a href="#" type="button" class="rounded-full bg-slate-800  fixed bottom-10 right-10 p-1 z-50">
         <svg class="w-10 h-10 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
             width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -25,7 +26,7 @@
     </a>
     <nav class="bg-slate-500 bg-opacity-60">
         <ul
-            class="flex px-1 text-white max-md:bg-green-200 max-sm:bg-red-400 max-md:text-xs *:ml-4 *:p-1 *:relative *:overflow-hidden [&_a]:inline-block [&_a]:w-full [&_a]:h-full [&_a]:z-10 [&_a]:relative  hover:[&>li]:bg-white hover:[&>li]:text-slate-600 [&>li]:transition-all [&>li]:duration-500 [&>li]:p-1 [&>li]:text-sm [&_a]:font-medium ">
+            class="flex px-1 text-white max-md:bg-green-200 max-sm:bg-red-400 max-sm:text-xs *:ml-4 *:p-1 *:relative *:overflow-hidden [&_a]:inline-block [&_a]:w-full [&_a]:h-full [&_a]:z-10 [&_a]:relative  hover:[&>li]:bg-white hover:[&>li]:text-slate-600 [&>li]:transition-all [&>li]:duration-500 [&>li]:p-1 [&>li]:text-xs [&_a]:font-medium ">
             <li class="w-[10rem]">
                 <a href="auth/registrasi.html" class="">Daftar</a>
                 <svg class="w-10 h-10 text-gray-800 dark:text-white absolute top-[-4px] left-[-2px] z-0 opacity-35"
@@ -63,7 +64,7 @@
                         d="M13 7h6l2 4m-8-4v8m0-8V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v9h2m8 0H9m4 0h2m4 0h2v-4m0 0h-5m3.5 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm-10 0a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" />
                 </svg>
             </li>
-            <li class="w-[16rem] float-right">
+            <li class="w-[16rem]">
                 <a href="">
                     Mari Bergabung Bersama Kami!
                 </a>
@@ -71,7 +72,7 @@
         </ul>
     </nav>
     <nav class="px-5 flex bg-[#4CC9FE]/10 backdrop-blur-md sticky top-0 z-50">
-        <a href="/index.html" class="w-[30%] ">
+        <a href="/index.html" class="w-[30%] max-sm:w-[50%] ">
             <div class="logo p-2 flex">
                 <img src="../public/assets/img/logo.png" alt="logo" class="w-28 max-md:hidden">
                 <div class="info ml-2 my-auto p-2 ">
@@ -83,8 +84,8 @@
                 </div>
             </div>
         </a>
-        <div class="w-[70%] flex items-center justify-between">
-            <div class="form-input flex w-[50%] ml-10 transition-all duration-500 relative">
+        <div class="w-[70%] max-sm:w-[60%] flex items-center justify-between max-sm:justify-end">
+            <div class="form-input flex w-[50%] max-sm:w-[90%] ml-10 transition-all duration-500 relative">
                 <input type="text" name="" id=""
                     class="w-[100%] p-2 text-xl font-sans outline-none focus:ring-2 focus:ring-sky-400 rounded-lg placeholder:italic placeholder:text-slate-400 transition-all duration-500 group/search"
                     tabindex="0" placeholder="Cari Sesuatu....">
@@ -133,7 +134,7 @@
     </nav>
     <nav class="bg-px-5 bg-[#4CC9FE]/10 backdrop-blur-md sticky top-0 border-dashed  border-y-slate-500 ">
         <ul
-            class=" flex w-[60%] max-md:[&_button]:text-sm hover:[&_button]:bg-sky-300 [&_button]:transition-all max-sm:[&_button]:w-16 max-sm:[&_svg]:hidden max-md:[&_button]:w-28 [&_button]:w-36 [&_button]:text-center [&_button]:duration-500  [&_button]:inline-block [&_button]:m-2 [&_button]:font-semibold [&_button]:p-2 [&_button]:rounded-3xl justify-between font-[Poppins] [&>li]hover/down:[&_button]:text-white group-hover/down:[&_button]:text-white">
+            class=" flex w-[60%] max-sm:w-full max-sm:[&_button]:text-xs hover:[&_button]:bg-sky-300 [&_button]:transition-all max-sm:[&_li]:w-[20%] max-sm:[&_svg]:hidden max-sm:[&_button]:w-[100%] [&_button]:w-36 [&_button]:text-center [&_button]:duration-500  [&_button]:inline-block [&_button]:m-2 [&_button]:font-semibold [&_button]:p-2 [&_button]:rounded-3xl justify-between font-[Poppins] [&>li]hover/down:[&_button]:text-white group-hover/down:[&_button]:text-white">
             <li class="group/down">
                 <a href="/produk/produk.html">
                     <button typr="button" class="ml-2 flex justify-start">
@@ -503,18 +504,18 @@
                 </button>
             </li>
             <li><button
-                    class="flex group hover:bg-sky-300 transition-all w-36 text-center duration-500 m-2 pl-4 font-semibold p-2 rounded-3xl">Mitra
+                    class="flex group hover:bg-sky-300 transition-all w-36 max-sm:text-xs text-center duration-500 m-2 pl-4 font-semibold p-2 rounded-3xl">Mitra
                     Terdekat</button>
             </li>
         </ul>
     </nav>
     <main class="container">
-        <section id="welcome" class="md:flex">
+        <section id="welcome" class="sm:flex">
             <div class="jumbotron h-[20rem] max-sm:h-[12rem] w-[75%] max-sm:w-[100%] overflow-hidden my-6 rounded-md shadow-md">
                 <img src="public/assets/img/dashboard.png" alt="">
             </div>
             <aside
-                class="mx-5 h-[24rem] w-[25%] max-sm:w-[100%] [&>div]:h-20 [&_a]:text-center [&_a]:text-4xl max-sm:text-xs [&_a]:text-transparent [&_a]:font-extrabold first:[&_div]:rounded-t-lg last:[&_div]:rounded-b-lg  hover:[&>div]:h-28 [&>div]:flex [&>div]:justify-center [&>div]:items-center [&>div]:transition-all [&>div]:duration-500 [&>div]:z-20 bg-gradient-to-br from-yellow-400 via-indigo-500 to-lime-500 bg-clip-text">
+                class="mx-5 h-[24rem] w-[25%] max-sm:w-[90%] [&>div]:h-20 [&_a]:text-center [&_a]:text-4xl max-sm:text-xs [&_a]:text-transparent [&_a]:font-extrabold first:[&_div]:rounded-t-lg last:[&_div]:rounded-b-lg  hover:[&>div]:h-28 [&>div]:flex [&>div]:justify-center [&>div]:items-center [&>div]:transition-all [&>div]:duration-500 [&>div]:z-20 bg-gradient-to-br from-yellow-400 via-indigo-500 to-lime-500 bg-clip-text">
                 <div class="card group overflow-hidden shadow-md mt-6">
                     <!-- <div
                             class="bg-[url('/public/assets/img/logo.png')] bg-cover w-20 h-20 top-2 opacity-50 right-2 group-hover:transition-all group-hover:duration-500">
@@ -545,7 +546,7 @@
             <div class="my-20">
                 <h2 class="font-extrabold text-5xl ml-10 my-8 text-slate-700 font-[Righteous]">Hewan Peliharaan</h2>
                 <div
-                    class="hewan hover:[&_a]:scale-105 animate-[slide_30s_linear_infinite] whitespace-nowrap [&_a]:transition-all [&_a]:duration-300 [&_div]:inline-block [&_div]:rounded-full [&_a]:mx-16 relative">
+                    class="hewan hover:[&_a]:scale-105 animate-[slide_30s_linear_infinite] whitespace-nowrap [&_a]:transition-all [&_a]:duration-300 [&_div]:inline-block [&_div]:rounded-full max-sm:[&_a]:mx-5 [&_a]:mx-16 relative">
                     <div
                         class="sub-hwn [&_div]:outline-dotted [&_div]:outline-sky-500 [&_div]:shadow-md relative -z-10">
                         <a href="">
@@ -650,36 +651,33 @@
             </div>
         </section>
         <section id="detail-info" class="">
-            <div class="area flex justify-around py-8 [&>div]:rounded-md text-white [&_p]:pr-8 [&_p]:my-4 z-0">
-                <div class="card w-[22%] h-[25rem] p-8 bg-indigo-600 relative z-10 overflow-hidden">
-                    <h1 class="font-bold text-2xl sm:text-xl">PET GROOMING SERVICES</h1>
-                    <p class="font-thin relative z-10 max-sm: text-xs">
+            <div class="area flex max-sm:flex-wrap max-sm:justify-around justify-around py-8 [&>div]:rounded-md text-white [&_p]:pr-8 [&_p]:my-4 z-0">
+                <div class="card max-sm:mb-4 max-sm:w-[40%] w-[22%] h-[25rem] p-8 bg-indigo-600 relative z-10 overflow-hidden">
+                    <h1 class="font-bold text-2xl max-sm:text-sm">PET GROOMING SERVICES</h1>
+                    <p class="font-thin relative z-10 max-sm:text-xs">
                         Melayani Jasa Grooming Kucing & Anjing – Grooming Panggilan – Memanjakan & Memandikan
                         Peliharaan Kesayangan Kamu – Merawat Kucing & Anjing Kesayangan.<br><span
                             class="text-xl font-semibold">Free Vitamin</span></p>
                     <img src="public/assets/img/groming.png" alt=""
-                        class="absolute -bottom-20 -right-20 z-0 opacity-60">
-                </div>
-                <div class="card w-[22%] h-[25rem] p-8 bg-green-600 relative overflow-hidden">
-                    <h1 class="text-2xl font-bold">PET HOTEL SERVICES</h1>
-                    <p class="font-thin relative z-10">
+                        class="absolute -bottom-20 -right-20 z-0 opacity-60"></div>
+                <div class="card max-sm:mb-4 max-sm:w-[40%] w-[22%] h-[25rem] p-8 bg-green-600 relative overflow-hidden">
+                    <h1 class="text-2xl max-sm:text-sm font-bold">PET HOTEL SERVICES</h1>
+                    <p class="font-thin relative z-10 max-sm:text-xs">
                         Melayani Jasa Penitipan Kucing Dan Anjing Harian Dengan Pelayanan Terpercaya. Kesehatan,
                         Kenyamanan, Dan Kebahagiaan Anabul Kamu Merupakan Prioritas Kami. <br><span
                             class="text-xl font-semibold">Diskon 25%</span></p>
-                    <img src="public/assets/img/hotel.png" alt="" class="absolute -bottom-24 -right-    24 z-0 opacity-40">
-                </div>
-                <div class="card w-[22%] h-[25rem] overflow-hidden p-8 bg-orange-600 relative">
-                    <h1 class="text-2xl font-bold">DOG TRAINING SERVICES</h1>
-                    <p class="font-thin relative z-10">
+                    <img src="public/assets/img/hotel.png" alt="" class="absolute -bottom-24 -right-    24 z-0 opacity-40"></div>
+                <div class="card max-sm:w-[40%] w-[22%] h-[25rem] overflow-hidden p-8 bg-orange-600 relative">
+                    <h1 class="text-2xl max-sm:text-sm font-bold">DOG TRAINING SERVICES</h1>
+                    <p class="font-thin relative z-10 max-sm:text-xs">
                         Melayani Jasa Pelatihan Anjing Profesional – Dengan Membentuk Karakter Dan Memaksimalkan
                         Potensi Anjing Kesayangan Anda. <br><span class="text-xl font-semibold">Konsultasi
                             Gratis!</span></p>
                     <img src="public/assets/img/training.png" alt=""
-                        class="absolute -bottom-24 -right-24 z-0 opacity-40">
-                </div>
-                <div class="card w-[22%] h-[25rem] overflow-hidden p-8 bg-yellow-600 relative">
-                    <h1 class="text-2xl font-bold">PET CLINIC</h1>
-                    <p class="font-thin relative z-10">
+                        class="absolute -bottom-24 -right-24 z-0 opacity-40"></div>
+                <div class="card max-sm:w-[40%] w-[22%] h-[25rem] overflow-hidden p-8 bg-yellow-600 relative">
+                    <h1 class="text-2xl max-sm:text-sm font-bold">PET CLINIC</h1>
+                    <p class="font-thin relative z-10 max-sm:text-xs">
                         Merupakan klinik hewan yang didukung oleh Tenaga Medis Profesional (Dokter Hewan Praktisi)
                         dalam mendiagnosa penyakit dan juga memiliki rasa berbelas kasih terhadap hewan kesayangan
                         anda. <br><span class="text-xl font-semibold">Gratis Pengecekan Standar</span></p>
@@ -689,19 +687,19 @@
         </section>
         <section id="shop">
             <div class="bs-kucing p-5">
-                <h1 class="text-5xl font-bold font-[Righteous] text-slate-600"><span
+                <h1 class="text-5xl max-sm:text-3xl font-bold font-[Righteous] text-slate-600"><span
                         class="mr-2 before:block before:absolute before:-inset-2 before:skew-y-3 before:bg-sky-400 relative inline-block"><span
                             class="relative text-white underline">Best Seller</span></span>untuk Kucing</h1>
-                <div class="area my-10 flex justify-between h-[150vh] ">
-                    <img src="/public/assets/img/promo/promo2.jpg" alt="" class="w-[30%] h-full">
+                <div class="area my-10 flex max-sm:block justify-between h-[150vh] ">
+                    <img src="/public/assets/img/promo/promo2.jpg" alt="" class="w-[30%] h-full max-sm:w-full max-sm:h-[25%]">
                     <div
-                        class="sub-area w-[68%] flex flex-wrap justify-around  [&>div]:outline [&>div]:outline-sky-50 hover:[&>div]:outline-2 hover:[&>div]:outline-sky-400 [&>div]:transition-all [&>div]:duration-500 [&_img]:h-48 [&_img]:mx-auto">
+                        class="sub-area w-[68%] max-sm:w-full flex flex-wrap justify-around max-sm:[&>div]:my-1 [&>div]:outline [&>div]:outline-sky-50 hover:[&>div]:outline-2 hover:[&>div]:outline-sky-400 [&>div]:transition-all [&>div]:duration-500 [&_img]:h-48 [&_img]:mx-auto">
                         <div class="card-cart w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                            <div class="imgc h-[50%] overflow-hidden">
+                            <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                                 <img src="public/assets/img/kucing/makanan/6.jpeg" alt="" class="">
                             </div>
                             <div class="card-body p-2 box-border h-[35%] ">
-                                <span class=" text-slate-500 font-bold text-2xl" id="Harga">Rp. 155.000,00</span></span>
+                                <span class=" text-slate-500 font-bold text-2xl max-sm:text-base" id="Harga">Rp. 155.000,00</span></span>
                                 <span id="stock"
                                     class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm">155</span><br>
                                 <a class="font-semibold inline-block text-slate-800 group" href="" id="produk">
@@ -709,7 +707,7 @@
                                     <hr
                                         class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                                 </a>
-                                <p class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600"
+                                <p class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm max-sm:text-xs font-thin text-slate-600"
                                     id="deskripsi">
                                     Royal Canin Instinctive Thin Slices In Gravy Wet Cat Food</p>
                             </div>
@@ -718,7 +716,7 @@
                                     <span class="text-xs text-slate-400">4/5</span>
                                 </div>
                                 <div
-                                    class="w-[48%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
+                                    class="w-[48%] max-sm:w-[75%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
                                     <button id="buy" class="flex justify-center items-center">
                                         <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -750,11 +748,11 @@
                             </div>
                         </div>
                         <div class="card-cart w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                            <div class="imgc h-[50%] overflow-hidden">
+                            <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                                 <img src="public/assets/img/kucing/makanan/7.jpeg" alt="" class="">
                             </div>
                             <div class="card-body p-2 box-border h-[35%] ">
-                                <span class=" text-slate-500 font-bold text-2xl">Rp. <span
+                                <span class=" text-slate-500 font-bold text-2xl max-sm:text-base">Rp. <span
                                         class="">40.500,00</span></span>
                                 <span id="stock"
                                     class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm">97</span><br>
@@ -764,7 +762,7 @@
                                         class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                                 </a>
                                 <p
-                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600">
+                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm max-sm:text-xs font-thin text-slate-600">
                                     Royal Canin Mother & Babycat
                                     4,9</p>
                             </div>
@@ -773,7 +771,7 @@
                                     <span class="text-xs text-slate-400">4/5</span>
                                 </div>
                                 <div
-                                    class="w-[48%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
+                                    class="w-[48%] max-sm:w-[75%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
                                     <button id="buy" class="flex justify-center items-center">
                                         <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -804,11 +802,11 @@
                             </div>
                         </div>
                         <div class="card-cart w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                            <div class="imgc h-[50%] overflow-hidden">
+                            <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                                 <img src="public/assets/img/kucing/makanan/2.jpeg" alt="" class="">
                             </div>
                             <div class="card-body p-2 box-border h-[35%] ">
-                                <span class=" text-slate-500 font-bold text-2xl">Rp. <span
+                                <span class=" text-slate-500 font-bold text-2xl max-sm:text-base">Rp. <span
                                         class="">59.890,00</span></span>
                                 <span id="stock"
                                     class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm">125</span><br>
@@ -818,7 +816,7 @@
                                         class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                                 </a>
                                 <p
-                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600">
+                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm max-sm:text-xs font-thin text-slate-600">
                                     Meo Makanan Kucing kering ocean fish 1,1 kg dry food Meo.</p>
                             </div>
                             <div class="card-footer p-2 flex justify-between items-center">
@@ -826,7 +824,7 @@
                                     <span class="text-xs text-slate-400">4/5</span>
                                 </div>
                                 <div
-                                    class="w-[48%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
+                                    class="w-[48%] max-sm:w-[75%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
                                     <button id="buy" class="flex justify-center items-center">
                                         <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -857,11 +855,11 @@
                             </div>
                         </div>
                         <div class="card-cart w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                            <div class="imgc h-[50%] overflow-hidden">
+                            <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                                 <img src="public/assets/img//kucing/makanan/3.jpeg" alt="" class="">
                             </div>
                             <div class="card-body p-2 box-border h-[35%] ">
-                                <span class=" text-slate-500 font-bold text-2xl">Rp. <span class="">
+                                <span class=" text-slate-500 font-bold text-2xl max-sm:text-base">Rp. <span class="">
                                         33.000,00</span></span>
                                 <span id="stock"
                                     class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm">28</span><br>
@@ -871,7 +869,7 @@
                                         class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                                 </a>
                                 <p
-                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600">
+                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm max-sm:text-xs font-thin text-slate-600">
                                     Meo Creamy Treats 1 pack isi 4 x 15gr | Makanan Kucing.</p>
                             </div>
                             <div class="card-footer p-2 flex justify-between items-center">
@@ -879,7 +877,7 @@
                                     <span class="text-xs text-slate-400">4/5</span>
                                 </div>
                                 <div
-                                    class="w-[48%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
+                                    class="w-[48%] max-sm:w-[75%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
                                     <button id="buy" class="flex justify-center items-center">
                                         <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -910,11 +908,11 @@
                             </div>
                         </div>
                         <div class="card-cart w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                            <div class="imgc h-[50%] overflow-hidden">
+                            <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                                 <img src="public/assets/img/kucing/makanan/1.jpeg" alt="" class="">
                             </div>
                             <div class="card-body p-2 box-border h-[35%] ">
-                                <span class=" text-slate-500 font-bold text-2xl">Rp. <span
+                                <span class=" text-slate-500 font-bold text-2xl max-sm:text-base">Rp. <span
                                         class="">35.650,00</span></span>
                                 <span id="stock"
                                     class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm">45</span><br>
@@ -924,7 +922,7 @@
                                         class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                                 </a>
                                 <p
-                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600">
+                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm max-sm:text-xs font-thin text-slate-600">
                                     WHISKAS 1+ ADULT 480 GRAM ALL VARIAN MAKANAN KUCING KERING DRY CAT FOOD. </p>
                             </div>
                             <div class="card-footer p-2 flex justify-between items-center">
@@ -932,7 +930,7 @@
                                     <span class="text-xs text-slate-400">4/5</span>
                                 </div>
                                 <div
-                                    class="w-[48%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
+                                    class="w-[48%] max-sm:w-[75%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
                                     <button id="buy" class="flex justify-center items-center">
                                         <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -963,11 +961,11 @@
                             </div>
                         </div>
                         <div class="card-cart w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                            <div class="imgc h-[50%] overflow-hidden">
+                            <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                                 <img src="public/assets/img/kucing//makanan/8.jpeg" alt="" class="">
                             </div>
                             <div class="card-body p-2 box-border h-[35%] ">
-                                <span class=" text-slate-500 font-bold text-2xl">Rp. <span class="">
+                                <span class=" text-slate-500 font-bold text-2xl max-sm:text-base">Rp. <span class="">
                                         19.900,00</span></span>
                                 <span id="stock"
                                     class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm">23</span><br>
@@ -977,7 +975,7 @@
                                         class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                                 </a>
                                 <p
-                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600">
+                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm max-sm:text-xs font-thin text-slate-600">
                                     Bolt Tuna Ikan (Ungu) - Makanan Kucing BOLT Kiloan Tuna - Makanan Kucing Kering
                                     Bolt.
                                 </p>
@@ -987,7 +985,7 @@
                                     <span class="text-xs text-slate-400">4/5</span>
                                 </div>
                                 <div
-                                    class="w-[48%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
+                                    class="w-[48%] max-sm:w-[75%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
                                     <button id="buy" class="flex justify-center items-center">
                                         <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -1017,7 +1015,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="produk/produk.html" class="h-8">
+                        <a href="produk/produk.html" class="h-8 max-sm:mt-5">
                             <button
                                 class="p-2 bg-sky-600 rounded-lg text-white font-semibold text-sm hover:bg-sky-500 active:bg-sky-400">
                                 Produk Lainnya..
@@ -1026,20 +1024,20 @@
                     </div>
                 </div>
             </div>
-            <div class="bs-anjing p-5">
-                <h1 class="text-5xl font-bold font-[Righteous] text-slate-600 text-center"><span
+            <div class="bs-anjing p-5 max-sm:mt-40">
+                <h1 class="text-5xl max-sm:text-3xl font-bold font-[Righteous] text-slate-600 text-center"><span
                         class="mr-2 before:block before:absolute before:-inset-2 before:-skew-y-6 before:bg-rose-500 relative inline-block"><span
                             class="relative text-white underline">Best Seller</span></span>untuk Anjing</h1>
-                <div class="area my-10 flex justify-between h-[150vh]">
+                <div class="area my-10 flex max-sm:block justify-between h-[150vh]">
                     <div
-                        class="sub-area w-[68%] flex flex-wrap justify-around items-start [&>div]:outline [&>div]:outline-sky-50 hover:[&>div]:outline-2 hover:[&>div]:outline-sky-400 [&>div]:transition-all [&>div]:duration-500">
+                        class="sub-area w-[68%] max-sm:w-full flex flex-wrap justify-around items-start [&>div]:outline [&>div]:outline-sky-50 hover:[&>div]:outline-2 hover:[&>div]:outline-sky-400 [&>div]:transition-all [&>div]:duration-500">
                         <div
                             class="card-cart w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible [&_img]:h-48 [&_img]:mx-auto">
-                            <div class="imgc h-[50%] overflow-hidden">
+                            <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                                 <img src="public/assets/img/anjing/makanan/3.jpeg" alt="" class="">
                             </div>
                             <div class="card-body p-2 box-border h-[35%] ">
-                                <span class=" text-slate-500 font-bold text-2xl">Rp. <span class="">
+                                <span class=" text-slate-500 font-bold text-2xl max-sm:text-base">Rp. <span class="">
                                         47.000,00</span></span>
                                 <span id="stock"
                                     class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm">23</span><br>
@@ -1049,7 +1047,7 @@
                                         class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                                 </a>
                                 <p
-                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600">
+                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm max-sm:text-xs font-thin text-slate-600">
                                     Kualitas Terjamin Royal Canin Junior
                                     Appetite Stimulation / Penambah
                                     Nafsu Makan..
@@ -1060,7 +1058,7 @@
                                     <span class="text-xs text-slate-400">4/5</span>
                                 </div>
                                 <div
-                                    class="w-[48%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
+                                    class="w-[48%] max-sm:w-[75%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
                                     <button id="buy" class="flex justify-center items-center">
                                         <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -1091,11 +1089,11 @@
                             </div>
                         </div>
                         <div class="card-cart w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                            <div class="imgc h-[50%] overflow-hidden">
+                            <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                                 <img src="public/assets/img/anjing/makanan/2.jpeg" alt="" class="">
                             </div>
                             <div class="card-body p-2 box-border h-[35%] ">
-                                <span class=" text-slate-500 font-bold text-2xl">Rp. <span class="">
+                                <span class=" text-slate-500 font-bold text-2xl max-sm:text-base">Rp. <span class="">
                                         101.000,00</span></span>
                                 <span id="stock"
                                     class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm">23</span><br>
@@ -1105,7 +1103,7 @@
                                         class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                                 </a>
                                 <p
-                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600">
+                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm max-sm:text-xs font-thin text-slate-600">
                                     Royal Canin Medium Puppy ? 1kg
                                     Puppy · Dry · Medium.
                                 </p>
@@ -1115,7 +1113,7 @@
                                     <span class="text-xs text-slate-400">4/5</span>
                                 </div>
                                 <div
-                                    class="w-[48%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
+                                    class="w-[48%] max-sm:w-[75%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
                                     <button id="buy" class="flex justify-center items-center">
                                         <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -1146,11 +1144,11 @@
                             </div>
                         </div>
                         <div class="card-cart w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                            <div class="imgc h-[50%] overflow-hidden">
+                            <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                                 <img src="public/assets/img/anjing/makanan/1.jpeg" alt="" class="">
                             </div>
                             <div class="card-body p-2 box-border h-[35%] ">
-                                <span class=" text-slate-500 font-bold text-2xl">Rp. <span class="">
+                                <span class=" text-slate-500 font-bold text-2xl max-sm:text-base">Rp. <span class="">
                                         56.870,00</span></span>
                                 <span id="stock"
                                     class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm">23</span><br>
@@ -1160,7 +1158,7 @@
                                         class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                                 </a>
                                 <p
-                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600">
+                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm max-sm:text-xs font-thin text-slate-600">
                                     Hill'S Urgent Care A/D Can 156 Gram
                                     For Dog and Cat.
                                 </p>
@@ -1170,7 +1168,7 @@
                                     <span class="text-xs text-slate-400">4/5</span>
                                 </div>
                                 <div
-                                    class="w-[48%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
+                                    class="w-[48%] max-sm:w-[75%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
                                     <button id="buy" class="flex justify-center items-center">
                                         <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -1201,11 +1199,11 @@
                             </div>
                         </div>
                         <div class="card-cart w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                            <div class="imgc h-[50%] overflow-hidden">
+                            <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                                 <img src="public/assets/img/anjing/makanan/5.jpeg" alt="" class="">
                             </div>
                             <div class="card-body p-2 box-border h-[35%] ">
-                                <span class=" text-slate-500 font-bold text-2xl">Rp. <span class="">
+                                <span class=" text-slate-500 font-bold text-2xl max-sm:text-base">Rp. <span class="">
                                         91.670,00</span></span>
                                 <span id="stock"
                                     class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm">23</span><br>
@@ -1215,7 +1213,7 @@
                                         class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                                 </a>
                                 <p
-                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600">
+                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm max-sm:text-xs font-thin text-slate-600">
                                     Pedigree Kering Puppy 1,3kg.
                                 </p>
                             </div>
@@ -1224,7 +1222,7 @@
                                     <span class="text-xs text-slate-400">4/5</span>
                                 </div>
                                 <div
-                                    class="w-[48%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
+                                    class="w-[48%] max-sm:w-[75%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
                                     <button id="buy" class="flex justify-center items-center">
                                         <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -1255,11 +1253,11 @@
                             </div>
                         </div>
                         <div class="card-cart w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                            <div class="imgc h-[50%] overflow-hidden">
+                            <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                                 <img src="public/assets/img/anjing/makanan/4.jpeg" alt="" class="">
                             </div>
                             <div class="card-body p-2 box-border h-[35%] ">
-                                <span class=" text-slate-500 font-bold text-2xl">Rp. <span class="">
+                                <span class=" text-slate-500 font-bold text-2xl max-sm:text-base">Rp. <span class="">
                                         47.500,00</span></span>
                                 <span id="stock"
                                     class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm">23</span><br>
@@ -1269,7 +1267,7 @@
                                         class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                                 </a>
                                 <p
-                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600">
+                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm max-sm:text-xs font-thin text-slate-600">
                                     Pedigree Kaleng 700 Gr.
                                 </p>
                             </div>
@@ -1278,7 +1276,7 @@
                                     <span class="text-xs text-slate-400">4/5</span>
                                 </div>
                                 <div
-                                    class="w-[48%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
+                                    class="w-[48%] max-sm:w-[75%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
                                     <button id="buy" class="flex justify-center items-center">
                                         <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -1309,11 +1307,11 @@
                             </div>
                         </div>
                         <div class="card-cart w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                            <div class="imgc h-[50%] overflow-hidden">
+                            <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                                 <img src="public/assets/img/anjing/makanan/10.jpeg" alt="" class="">
                             </div>
                             <div class="card-body p-2 box-border h-[35%] ">
-                                <span class=" text-slate-500 font-bold text-2xl">Rp. <span class="">
+                                <span class=" text-slate-500 font-bold text-2xl max-sm:text-base">Rp. <span class="">
                                         23.000,00</span></span>
                                 <span id="stock"
                                     class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm">23</span><br>
@@ -1323,7 +1321,7 @@
                                         class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                                 </a>
                                 <p
-                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600">
+                                    class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm max-sm:text-xs font-thin text-slate-600">
                                     Royal Canin Medium Adult Dog Wet
                                     Food RC 140 gram Makanan
                                     Anjing Basah.
@@ -1334,7 +1332,7 @@
                                     <span class="text-xs text-slate-400">4/5</span>
                                 </div>
                                 <div
-                                    class="w-[48%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
+                                    class="w-[48%] max-sm:w-[75%] *:w-[30%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-between">
                                     <button id="buy" class="flex justify-center items-center">
                                         <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
@@ -1364,26 +1362,26 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="produk/produk.html" class="h-8">
+                        <a href="produk/produk.html" class="h-8 max-sm:my-2">
                             <button
                                 class="p-2 bg-sky-600 rounded-lg text-white font-semibold text-sm hover:bg-sky-500 active:bg-sky-400">
                                 Produk Lainnya..
                             </button>
                         </a>
                     </div>
-                    <img src="/public/assets/img/promo/promo1.jpg" alt="" class="object-cover w-[30%] h-full">
+                    <img src="/public/assets/img/promo/promo1.jpg" alt="" class="object-cover w-[30%] h-full max-sm:w-full max-sm:h-[25%]">
                 </div>
             </div>
             <div class="all-product p-5">
-                <h1 class="text-4xl font-bold text-center text-slate-400 font-[Poppins]">Semua Produk dari Kami</h1>
+                <h1 class="text-4xl max-sm:text-2xl font-bold text-center text-slate-400 font-[Poppins] max-sm:mt-24">Semua Produk dari Kami</h1>
                 <div
                     class="area mt-8 h-[140vh] overflow-hidden flex justify-around flex-wrap [&>div]:my-2  [&>div]:outline [&>div]:outline-sky-50 hover:[&>div]:outline-2 hover:[&>div]:outline-sky-400 [&>div]:transition-all [&>div]:duration-500 hover:[&>div]:shadow-xl hover:[&>div]:scale-95 [&>div]:shadow-sm ">
-                    <div class="card-cart w-[15%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                        <div class="imgc h-[50%] overflow-hidden">
+                    <div class="card-cart w-[15%] max-sm:w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
+                        <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                             <img src="public/assets/img/kucing/makanan/6.jpeg" alt="" class="">
                         </div>
                         <div class="card-body p-2 box-border h-[35%] ">
-                            <span class=" text-slate-500 font-bold text-xl">Rp. <span class="">155.000,00</span></span>
+                            <span class=" text-slate-500 font-bold text-xl max-sm:text-base">Rp. <span class="">155.000,00</span></span>
                             <span id="stock"
                                 class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm text-sm">155</span><br>
                             <a class="font-semibold inline-block text-slate-800 group text-xl" href="">
@@ -1391,7 +1389,7 @@
                                 <hr class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                             </a>
                             <p
-                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-[0.8rem] font-thin text-slate-600">
+                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis max-sm:text-xs text-[0.8rem] font-thin text-slate-600">
                                 Royal Canin Instinctive Thin Slices In Gravy Wet Cat Food</p>
                         </div>
                         <div class="card-footer p-2 flex justify-between items-center">
@@ -1420,12 +1418,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-cart w-[15%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                        <div class="imgc h-[50%] overflow-hidden">
+                    <div class="card-cart w-[15%] max-sm:w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
+                        <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                             <img src="public/assets/img/kucing/makanan/7.jpeg" alt="" class="">
                         </div>
                         <div class="card-body p-2 box-border h-[35%] ">
-                            <span class=" text-slate-500 font-bold text-xl">Rp. <span class="">40.500,00</span></span>
+                            <span class=" text-slate-500 font-bold text-xl max-sm:text-base">Rp. <span class="">40.500,00</span></span>
                             <span id="stock"
                                 class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm ">97</span><br>
                             <a class="font-semibold inline-block text-slate-800 group text-xl" href="">
@@ -1433,7 +1431,7 @@
                                 <hr class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                             </a>
                             <p
-                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600 text-[0.7rem]">
+                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis max-sm:text-xs text-sm font-thin text-slate-600 text-[0.7rem]">
                                 Royal Canin Mother & Babycat
                                 4,9</p>
                         </div>
@@ -1463,12 +1461,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-cart w-[15%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                        <div class="imgc h-[50%] overflow-hidden">
+                    <div class="card-cart w-[15%] max-sm:w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
+                        <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                             <img src="public/assets/img/kucing/makanan/2.jpeg" alt="" class="">
                         </div>
                         <div class="card-body p-2 box-border h-[35%] ">
-                            <span class=" text-slate-500 font-bold text-xl">Rp. <span class="">59.890,00</span></span>
+                            <span class=" text-slate-500 font-bold text-xl max-sm:text-base">Rp. <span class="">59.890,00</span></span>
                             <span id="stock"
                                 class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm ">125</span><br>
                             <a class="font-semibold inline-block text-slate-800 group text-xl" href="">
@@ -1476,7 +1474,7 @@
                                 <hr class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                             </a>
                             <p
-                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600 text-[0.7rem]">
+                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis max-sm:text-xs text-sm font-thin text-slate-600 text-[0.7rem]">
                                 Meo Makanan Kucing kering ocean fish 1,1 kg dry food Meo.</p>
                         </div>
                         <div class="card-footer p-2 flex justify-between items-center">
@@ -1505,12 +1503,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-cart w-[15%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                        <div class="imgc h-[50%] overflow-hidden">
+                    <div class="card-cart w-[15%] max-sm:w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
+                        <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                             <img src="public/assets/img//kucing/makanan/3.jpeg" alt="" class="">
                         </div>
                         <div class="card-body p-2 box-border h-[35%] ">
-                            <span class=" text-slate-500 font-bold text-xl">Rp. <span class="">
+                            <span class=" text-slate-500 font-bold text-xl max-sm:text-base">Rp. <span class="">
                                     33.000,00</span></span>
                             <span id="stock"
                                 class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm ">28</span><br>
@@ -1519,7 +1517,7 @@
                                 <hr class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                             </a>
                             <p
-                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600 text-[0.7rem]">
+                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis max-sm:text-xs text-sm font-thin text-slate-600 text-[0.7rem]">
                                 Meo Creamy Treats 1 pack isi 4 x 15gr | Makanan Kucing.</p>
                         </div>
                         <div class="card-footer p-2 flex justify-between items-center">
@@ -1548,12 +1546,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-cart w-[15%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                        <div class="imgc h-[50%] overflow-hidden">
+                    <div class="card-cart w-[15%] max-sm:w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
+                        <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                             <img src="public/assets/img/kucing/makanan/1.jpeg" alt="" class="">
                         </div>
                         <div class="card-body p-2 box-border h-[35%] ">
-                            <span class=" text-slate-500 font-bold text-xl">Rp. <span class="">35.650,00</span></span>
+                            <span class=" text-slate-500 font-bold text-xl max-sm:text-base">Rp. <span class="">35.650,00</span></span>
                             <span id="stock"
                                 class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm ">45</span><br>
                             <a class="font-semibold inline-block text-slate-800 group text-xl" href="">
@@ -1561,7 +1559,7 @@
                                 <hr class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                             </a>
                             <p
-                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600 text-[0.7rem]">
+                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis max-sm:text-xs text-sm font-thin text-slate-600 text-[0.7rem]">
                                 WHISKAS 1+ ADULT 480 GRAM ALL VARIAN MAKANAN KUCING KERING DRY CAT FOOD. </p>
                         </div>
                         <div class="card-footer p-2 flex justify-between items-center">
@@ -1590,12 +1588,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-cart w-[15%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                        <div class="imgc h-[50%] overflow-hidden">
+                    <div class="card-cart w-[15%] max-sm:w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
+                        <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                             <img src="public/assets/img/kucing//makanan/8.jpeg" alt="" class="">
                         </div>
                         <div class="card-body p-2 box-border h-[35%] ">
-                            <span class=" text-slate-500 font-bold text-xl">Rp. <span class="">
+                            <span class=" text-slate-500 font-bold text-xl max-sm:text-base">Rp. <span class="">
                                     19.900,00</span></span>
                             <span id="stock"
                                 class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm ">23</span><br>
@@ -1604,7 +1602,7 @@
                                 <hr class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                             </a>
                             <p
-                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600 text-[0.7rem]">
+                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis max-sm:text-xs text-sm font-thin text-slate-600 text-[0.7rem]">
                                 Bolt Tuna Ikan (Ungu) - Makanan Kucing BOLT Kiloan Tuna - Makanan Kucing Kering
                                 Bolt.
                             </p>
@@ -1636,12 +1634,12 @@
                         </div>
                     </div>
                     <div
-                        class="card-cart w-[15%] h-[24rem] shadow-md rounded-sm overflow-visible [&_img]:h-48 [&_img]:mx-auto">
-                        <div class="imgc h-[50%] overflow-hidden">
+                        class="card-cart w-[15%] max-sm:w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible [&_img]:h-48 [&_img]:mx-auto">
+                        <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                             <img src="public/assets/img/anjing/makanan/3.jpeg" alt="" class="">
                         </div>
                         <div class="card-body p-2 box-border h-[35%] ">
-                            <span class=" text-slate-500 font-bold text-xl">Rp. <span class="">
+                            <span class=" text-slate-500 font-bold text-xl max-sm:text-base">Rp. <span class="">
                                     47.000,00</span></span>
                             <span id="stock"
                                 class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm ">23</span><br>
@@ -1650,7 +1648,7 @@
                                 <hr class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                             </a>
                             <p
-                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600 text-[0.7rem]">
+                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis max-sm:text-xs text-sm font-thin text-slate-600 text-[0.7rem]">
                                 Kualitas Terjamin Royal Canin Junior
                                 Appetite Stimulation / Penambah
                                 Nafsu Makan..
@@ -1682,12 +1680,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-cart w-[15%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                        <div class="imgc h-[50%] overflow-hidden">
+                    <div class="card-cart w-[15%] max-sm:w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
+                        <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                             <img src="public/assets/img/anjing/makanan/2.jpeg" alt="" class="">
                         </div>
                         <div class="card-body p-2 box-border h-[35%] ">
-                            <span class=" text-slate-500 font-bold text-xl">Rp. <span class="">
+                            <span class=" text-slate-500 font-bold text-xl max-sm:text-base">Rp. <span class="">
                                     101.000,00</span></span>
                             <span id="stock"
                                 class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm ">23</span><br>
@@ -1696,7 +1694,7 @@
                                 <hr class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                             </a>
                             <p
-                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600 text-[0.7rem]">
+                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis max-sm:text-xs text-sm font-thin text-slate-600 text-[0.7rem]">
                                 Royal Canin Medium Puppy ? 1kg
                                 Puppy · Dry · Medium.
                             </p>
@@ -1727,12 +1725,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-cart w-[15%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                        <div class="imgc h-[50%] overflow-hidden">
+                    <div class="card-cart w-[15%] max-sm:w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
+                        <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                             <img src="public/assets/img/anjing/makanan/1.jpeg" alt="" class="">
                         </div>
                         <div class="card-body p-2 box-border h-[35%] ">
-                            <span class=" text-slate-500 font-bold text-xl">Rp. <span class="">
+                            <span class=" text-slate-500 font-bold text-xl max-sm:text-base">Rp. <span class="">
                                     56.870,00</span></span>
                             <span id="stock"
                                 class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm ">23</span><br>
@@ -1741,7 +1739,7 @@
                                 <hr class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                             </a>
                             <p
-                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600 text-[0.7rem]">
+                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis max-sm:text-xs text-sm font-thin text-slate-600 text-[0.7rem]">
                                 Hill'S Urgent Care A/D Can 156 Gram
                                 For Dog and Cat.
                             </p>
@@ -1772,12 +1770,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-cart w-[15%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                        <div class="imgc h-[50%] overflow-hidden">
+                    <div class="card-cart w-[15%] max-sm:w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
+                        <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                             <img src="public/assets/img/anjing/makanan/5.jpeg" alt="" class="">
                         </div>
                         <div class="card-body p-2 box-border h-[35%] ">
-                            <span class=" text-slate-500 font-bold text-xl">Rp. <span class="">
+                            <span class=" text-slate-500 font-bold text-xl max-sm:text-base">Rp. <span class="">
                                     91.670,00</span></span>
                             <span id="stock"
                                 class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm ">23</span><br>
@@ -1786,7 +1784,7 @@
                                 <hr class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                             </a>
                             <p
-                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600 text-[0.7rem]">
+                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis max-sm:text-xs text-sm font-thin text-slate-600 text-[0.7rem]">
                                 Pedigree Kering Puppy 1,3kg.
                             </p>
                         </div>
@@ -1816,12 +1814,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-cart w-[15%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                        <div class="imgc h-[50%] overflow-hidden">
+                    <div class="card-cart w-[15%] max-sm:w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
+                        <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                             <img src="public/assets/img/anjing/makanan/4.jpeg" alt="" class="">
                         </div>
                         <div class="card-body p-2 box-border h-[35%] ">
-                            <span class=" text-slate-500 font-bold text-xl">Rp. <span class="">
+                            <span class=" text-slate-500 font-bold text-xl max-sm:text-base">Rp. <span class="">
                                     47.500,00</span></span>
                             <span id="stock"
                                 class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm ">23</span><br>
@@ -1830,7 +1828,7 @@
                                 <hr class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                             </a>
                             <p
-                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600 text-[0.7rem]">
+                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis max-sm:text-xs text-sm font-thin text-slate-600 text-[0.7rem]">
                                 Pedigree Kaleng 700 Gr.
                             </p>
                         </div>
@@ -1860,12 +1858,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-cart w-[15%] h-[24rem] shadow-md rounded-sm overflow-visible">
-                        <div class="imgc h-[50%] overflow-hidden">
+                    <div class="card-cart w-[15%] max-sm:w-[30%] h-[24rem] shadow-md rounded-sm overflow-visible">
+                        <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                             <img src="public/assets/img/anjing/makanan/10.jpeg" alt="" class="">
                         </div>
                         <div class="card-body p-2 box-border h-[35%] ">
-                            <span class=" text-slate-500 font-bold text-xl">Rp. <span class="">
+                            <span class=" text-slate-500 font-bold text-xl max-sm:text-base">Rp. <span class="">
                                     23.000,00</span></span>
                             <span id="stock"
                                 class="px-1 float-end  text-white bg-sky-600 text-center rounded-sm ">23</span><br>
@@ -1874,7 +1872,7 @@
                                 <hr class="w-0 border border-sky-400 group-hover:transition-[lineffect_2s_ease_in_out]">
                             </a>
                             <p
-                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600 text-[0.7rem]">
+                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis max-sm:text-xs text-sm font-thin text-slate-600 text-[0.7rem]">
                                 Royal Canin Medium Adult Dog Wet
                                 Food RC 140 gram Makanan
                                 Anjing Basah.
@@ -1906,8 +1904,66 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-cart w-[15%] h-[20rem] rounded-sm">
-                        <div class="imgc h-[50%] overflow-hidden">
+                    <div class="card-cart w-[15%] max-sm:w-[30%] h-[20rem] rounded-sm">
+                        <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
+                            <img src="public/assets/img/logo.png" alt="" class="">
+                        </div>
+                        <div class="card-body p-2 box-border h-[35%]">
+                            <a class="font-semibold inline-block text-slate-800 group text-xl" href="">
+                                Royal Canin
+                                <hr class="w-0 border border-sky-400 group-hover:animate-[lineffect_2s_ease_in_out]">
+                            </a>
+                            <span id="stock"
+                                class="px-1 float-end text-white bg-sky-600 text-center rounded-sm ">155</span>
+                            <p
+                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis max-sm:text-xs text-sm font-thin text-slate-600 text-[0.7rem]">
+                                Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Tenetur molestias alias neque? Nam cum neque mollitia iusto
+                                natus ipsum aut!adipisicing elit. Eaque, cupiditate. Repellendus recusandae illo
+                                illum molestiae distinctio nulla aliquid asperiores soluta!</p>
+                        </div>
+                        <div class="card-footer p-2 flex justify-between items-center">
+                            <div id="rating" class="w-[48%] flex items-center">
+                                <span class="text-xs text-slate-400">4/5</span>
+                            </div>
+                            <div
+                                class="w-[48%] *:w-[40%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-around">
+                                <button id="buy"></button>
+                                <button id="add"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-cart w-[15%] max-sm:w-[30%] h-[20rem] rounded-sm">
+                        <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
+                            <img src="public/assets/img/logo.png" alt="" class="">
+                        </div>
+                        <div class="card-body p-2 box-border h-[35%]">
+                            <a class="font-semibold inline-block text-slate-800 group text-xl" href="">
+                                Royal Canin
+                                <hr class="w-0 border border-sky-400 group-hover:animate-[lineffect_2s_ease_in_out]">
+                            </a>
+                            <span id="stock"
+                                class="px-1 float-end text-white bg-sky-600 text-center rounded-sm ">155</span>
+                            <p
+                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis max-sm:text-xs text-sm font-thin text-slate-600 text-[0.7rem]">
+                                Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Tenetur molestias alias neque? Nam cum neque mollitia iusto
+                                natus ipsum aut!adipisicing elit. Eaque, cupiditate. Repellendus recusandae illo
+                                illum molestiae distinctio nulla aliquid asperiores soluta!</p>
+                        </div>
+                        <div class="card-footer p-2 flex justify-between items-center">
+                            <div id="rating" class="w-[48%] flex items-center">
+                                <span class="text-xs text-slate-400">4/5</span>
+                            </div>
+                            <div
+                                class="w-[48%] *:w-[40%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-around">
+                                <button id="buy"></button>
+                                <button id="add"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-cart w-[15%] max-sm:w-[30%] h-[20rem] rounded-sm">
+                        <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                             <img src="public/assets/img/logo.png" alt="" class="">
                         </div>
                         <div class="card-body p-2 box-border h-[35%]">
@@ -1935,66 +1991,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-cart w-[15%] h-[20rem] rounded-sm">
-                        <div class="imgc h-[50%] overflow-hidden">
-                            <img src="public/assets/img/logo.png" alt="" class="">
-                        </div>
-                        <div class="card-body p-2 box-border h-[35%]">
-                            <a class="font-semibold inline-block text-slate-800 group text-xl" href="">
-                                Royal Canin
-                                <hr class="w-0 border border-sky-400 group-hover:animate-[lineffect_2s_ease_in_out]">
-                            </a>
-                            <span id="stock"
-                                class="px-1 float-end text-white bg-sky-600 text-center rounded-sm ">155</span>
-                            <p
-                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600 text-[0.7rem]">
-                                Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Tenetur molestias alias neque? Nam cum neque mollitia iusto
-                                natus ipsum aut!adipisicing elit. Eaque, cupiditate. Repellendus recusandae illo
-                                illum molestiae distinctio nulla aliquid asperiores soluta!</p>
-                        </div>
-                        <div class="card-footer p-2 flex justify-between items-center">
-                            <div id="rating" class="w-[48%] flex items-center">
-                                <span class="text-xs text-slate-400">4/5</span>
-                            </div>
-                            <div
-                                class="w-[48%] *:w-[40%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-around">
-                                <button id="buy"></button>
-                                <button id="add"></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-cart w-[15%] h-[20rem] rounded-sm">
-                        <div class="imgc h-[50%] overflow-hidden">
-                            <img src="public/assets/img/logo.png" alt="" class="">
-                        </div>
-                        <div class="card-body p-2 box-border h-[35%]">
-                            <a class="font-semibold inline-block text-slate-800 group text-xl" href="">
-                                Royal Canin
-                                <hr class="w-0 border border-sky-400 group-hover:animate-[lineffect_2s_ease_in_out]">
-                            </a>
-                            <span id="stock"
-                                class="px-1 float-end text-white bg-sky-600 text-center rounded-sm ">155</span>
-                            <p
-                                class="mb-1 w-full h-[80%] overflow-clip text-ellipsis text-sm font-thin text-slate-600 text-[0.7rem]">
-                                Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Tenetur molestias alias neque? Nam cum neque mollitia iusto
-                                natus ipsum aut!adipisicing elit. Eaque, cupiditate. Repellendus recusandae illo
-                                illum molestiae distinctio nulla aliquid asperiores soluta!</p>
-                        </div>
-                        <div class="card-footer p-2 flex justify-between items-center">
-                            <div id="rating" class="w-[48%] flex items-center">
-                                <span class="text-xs text-slate-400">4/5</span>
-                            </div>
-                            <div
-                                class="w-[48%] *:w-[40%] *:h-8 *:bg-red-500 *:rounded-xl hover:*:scale-95 hover:*:transition-all hover:*:duration-300 flex justify-around">
-                                <button id="buy"></button>
-                                <button id="add"></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-cart w-[15%] h-[20rem] rounded-sm">
-                        <div class="imgc h-[50%] overflow-hidden">
+                    <div class="card-cart w-[15%] max-sm:w-[30%] h-[20rem] rounded-sm">
+                        <div class="imgc h-[50%] max-sm:h-[40%] overflow-hidden">
                             <img src="public/assets/img/logo.png" alt="" class="">
                         </div>
                         <div class="card-body p-2 box-border h-[35%]">
@@ -2034,25 +2032,25 @@
                 </div>
             </div>
         </section>
-        <section class="riview h-[100vh] py-12 px-10 relative">
-            <h1 class="mx-2 text-9xl font-extrabold p-2 font-[Inter] absolute -top-10 left-0 text-slate-400 shado z-0w">
+        <section class="riview h-[100vh] py-12 max-sm:py-14 px-10 relative">
+            <h1 class="mx-2 text-9xl max-sm:text-5xl font-extrabold p-2 font-[Inter] absolute -top-10 left-0 text-slate-400 shado z-0w">
                 Galery dan Ulasan</h1>
 
             <div
                 class="area p-1 h-[85vh] grid grid-rows-4 grid-cols-5 space-x-1 space-y-1 [&>div]:overflow-hidden hover:[&>div>img]:scale-110 [&>div>img]:transition-all [&>div>img]:duration-500 *:rounded-md [&>div>img]:w-full [&>div>img]:h-full [&>div>img]:object-cover relative [&>div]:shadow-md">
-                <div class="galery col-span-2 row-span-2 shadow-sm border border-slate-200">
+                <div class="galery max-sm:hidden col-span-2 row-span-2 shadow-sm border border-slate-200">
                     <img src="public/assets/img/gallery/1.jpg" alt="">
                 </div>
-                <div class="splide slider3 col-span-3 row-span-2 border-2 border-dashed border-sky-400" role="group"
+                <div class="splide slider3 col-span-3 max-sm:col-span-5 row-span-2 border-2 border-dashed border-sky-400" role="group"
                     aria-label="Splide-brand">
                     <div class="splide__track text-center border border-slate-200">
                         <ul class="splide__list [&>li]:bg-white/80 [&>li]:backdrop-blur-md">
                             <li class="splide__slide">
                                 <div class="review-2 flex relative">
-                                    <div class="user w-[25%] h-full p-5 flex flex-col items-center shadow-sm">
+                                    <div class="user w-[25%] max-sm:w-[30%] h-full p-5 max-sm:p-3 flex flex-col items-center shadow-sm">
                                         <img src="public/assets/img/person3.jpg" alt="" width="100rem" height="100rem"
                                             class="rounded-full">
-                                        <h1 class="text-xl text-center font-semibold">Hendra Ganteng</h1>
+                                        <h1 class="max-sm:text-sm text-xl text-center font-semibold">Hendra Ganteng</h1>
                                         <div class="stars mt-3 flex justify-around">
                                             <svg class="w-5 h-5 text-yellow-200 dark:text-white" aria-hidden="true"
                                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2086,7 +2084,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <div class="user-riview w-[75%] p-12 overflow-hidden text-ellipsis relative">
+                                    <div class="user-riview w-[75%] max-sm:w-[60%] max-sm:text-xs p-12 overflow-hidden text-ellipsis relative">
                                         <p
                                             class="my-1 p-1 text-xs bg-green-400 rounded-md font-semibold text-white absolute top-4 right-8 border border-slate-300">
                                             Kucing</p>
@@ -2110,10 +2108,10 @@
                             </li>
                             <li class="splide__slide">
                                 <div class="review-2 flex  relative">
-                                    <div class="user w-[25%] h-full p-5 flex flex-col items-center shadow-sm">
+                                    <div class="user w-[25%] max-sm:w-[30%] h-full p-5 max-sm:p-3 flex flex-col items-center shadow-sm">
                                         <img src="public/assets/img/person2.jpg" alt="" width="100rem"
                                             class="rounded-full h-32">
-                                        <h1 class="text-xl text-center font-semibold">Bapak Jokowi</h1>
+                                        <h1 class="max-sm:text-sm text-xl text-center font-semibold">Bapak Jokowi</h1>
                                         <div class="stars mt-3 flex justify-around">
                                             <svg class="w-5 h-5 text-yellow-200 dark:text-white" aria-hidden="true"
                                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2147,7 +2145,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <div class="user-riview w-[75%] p-12 overflow-hidden text-ellipsis relative">
+                                    <div class="user-riview w-[75%] max-sm:w-[60%] max-sm:text-xs p-12 overflow-hidden text-ellipsis relative">
                                         <p
                                             class="my-1 p-1 text-xs bg-green-400 rounded-md font-semibold text-white absolute top-4 right-8 border border-slate-300">
                                             Kucing</p>
@@ -2173,10 +2171,10 @@
                             </li>
                             <li class="splide__slide">
                                 <div class="review-2 flex  relative">
-                                    <div class="user w-[25%] h-full p-5 flex flex-col items-center shadow-sm">
+                                    <div class="user w-[25%] max-sm:w-[30%] h-full p-5 max-sm:p-3 flex flex-col items-center shadow-sm">
                                         <img src="public/assets/img/person1.jpg" alt="" width="100rem"
                                             class="rounded-full h-28">
-                                        <h1 class="text-xl text-center font-semibold">Bapak Prabowo</h1>
+                                        <h1 class="max-sm:text-sm text-xl text-center font-semibold">Bapak Prabowo</h1>
                                         <div class="stars mt-3 flex justify-around">
                                             <svg class="w-5 h-5 text-yellow-200 dark:text-white" aria-hidden="true"
                                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2210,7 +2208,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <div class="user-riview w-[75%] p-12 overflow-hidden text-ellipsis relative">
+                                    <div class="user-riview w-[75%] max-sm:w-[60%] max-sm:text-xs p-12 overflow-hidden text-ellipsis relative">
                                         <p
                                             class="my-1 p-1 text-xs bg-green-400 rounded-md font-semibold text-white absolute top-4 right-8 border border-slate-300">
                                             Kucing</p>
@@ -2236,10 +2234,10 @@
                             </li>
                             <li class="splide__slide">
                                 <div class="review-2 flex  relative">
-                                    <div class="user w-[25%] h-full p-5 flex flex-col items-center shadow-sm">
+                                    <div class="user w-[25%] max-sm:w-[30%] h-full p-5 max-sm:p-3 flex flex-col items-center shadow-sm">
                                         <img src="public/assets/img/person3.jpg" alt="" width="100rem" height="100rem"
                                             class="rounded-full">
-                                        <h1 class="text-xl text-center font-semibold">Hendra Ganteng</h1>
+                                        <h1 class="max-sm:text-sm text-xl text-center font-semibold">Hendra Ganteng</h1>
                                         <div class="stars mt-3 flex justify-around">
                                             <svg class="w-5 h-5 text-yellow-200 dark:text-white" aria-hidden="true"
                                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2273,7 +2271,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <div class="user-riview w-[75%] p-12 overflow-hidden text-ellipsis relative">
+                                    <div class="user-riview w-[75%] max-sm:w-[60%] max-sm:text-xs p-12 overflow-hidden text-ellipsis relative">
                                         <p
                                             class="my-1 p-1 text-xs bg-green-400 rounded-md font-semibold text-white absolute top-4 right-8 border border-slate-300">
                                             Kucing</p>
@@ -2301,37 +2299,37 @@
                         </ul>
                     </div>
                 </div>
-                <div class="galery col-span-1 row-span-2 shadow-sm border border-slate-200">
+                <div class="galery max-sm:hidden col-span-1 row-span-2 shadow-sm border border-slate-200">
                     <img src="public/assets/img/gallery/2.jpg" alt="">
 
                 </div>
-                <div class="galery col-span-1 row-span-2 shadow-sm border border-slate-200">
+                <div class="galery col-span-1 max-sm:col-span-2 row-span-2 shadow-sm border border-slate-200">
                     <img src="public/assets/img/gallery/5.jpg" alt="">
 
                 </div>
-                <div class="galery col-span-1 row-span-2 shadow-sm border border-slate-200">
+                <div class="galery max-sm:hidden col-span-1 row-span-2 shadow-sm border border-slate-200">
                     <img src="public/assets/img/gallery/6.jpg" alt="">
 
                 </div>
-                <div class="galery col-span-2 row-span-2 shadow-sm border border-slate-200">
+                <div class="galery col-span-2 max-sm:col-span-3 row-span-2 shadow-sm border border-slate-200">
                     <img src="public/assets/img/gallery/4.jpg" alt="">
 
                 </div>
             </div>
         </section>
         <section id="map main-store">
-            <div class="area p-12 py-16 flex justify-between font-[poppins]">
-                <div class="info w-[40%] max-md:flex flex-col justify-center">
-                    <h1 class="text-4xl font-extrabold">PetShop
+            <div class="area p-12 py-16 flex max-sm:block justify-between font-[poppins]">
+                <div class="info w-[40%] max-sm:w-full flex max flex-col justify-center">
+                    <h1 class="text-4xl max-sm:text-3xl font-extrabold">PetShop
                         <span
                             class="bg-gradient-to-tr from-sky-500 via-green-500 to-indigo-600 bg-clip-text text-transparent">JATAYU</span><br>(Main
                         Store)</h1>
-                    <p class="my-4 text-xl text-slate-700">
+                    <p class="my-4 text-xl max-sm:text-sm text-slate-700">
                         Jalan Ir. Sutami 36 Kentingan, Jebres, Surakarta, Jawa
                         Tengah, Indonesia 57126</p>
-                    <p class="text-slate-400">*dan banyak cabang lainya tersebar diseluruh Indonesia</p>
+                    <p class="text-slate-400 max-sm:text-xs">*dan banyak cabang lainya tersebar diseluruh Indonesia</p>
                 </div>
-                <div class="w-[55%]">
+                <div class="w-[55%] max-sm:w-full max-sm:mt-3">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.1023097932607!2d110.85293457357646!3d-7.5638234746968225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a1701d4e76577%3A0x1dda23161c112f68!2sKentingan%20Jl.%20Ir.%20Sutami%20No.36%2C%20Pucangsawit%2C%20Kec.%20Jebres%2C%20Kota%20Surakarta%2C%20Jawa%20Tengah%2057125!5e0!3m2!1sid!2sid!4v1733758604353!5m2!1sid!2sid"
                         width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
@@ -2601,19 +2599,19 @@
 
     </main>
 
-    <footer class="bg-gradient-to-br from-sky-300 via-sky-100 to-sky-300 flex justify-between p-10 h-[85vh]">
+    <footer class="bg-gradient-to-br from-sky-300 via-sky-100 to-sky-300 flex justify-between p-10 max-sm:p-4 h-[85vh] max-sm:h-[60vh]">
         <div class="footer-info w-[45%] pl-5">
-            <div class="logo p-2 flex">
-                <img src="../public/assets/img/logo.png" alt="logo" class="w-28">
-                <div class="info ml-2 p-2 ">
-                    <h1 class="text-4xl font-bold">PetShop JATAYU</h1>
-                    <h2 class="text-base">Pusat Perawatan dan kebutuhan Hewan Peliharan Terlengkap</h2>
+            <div class="logo p-2 flex items-center">
+                <img src="../public/assets/img/logo.png" alt="logo" class="w-28 max-sm:w-14 max-sm:h-14">
+                <div class="info ml-2 p-2 max-sm:p-0.5">
+                    <h1 class="text-4xl max-sm:text-xl font-bold">PetShop JATAYU</h1>
+                    <h2 class="text-base max-sm:text-xs">Pusat Perawatan dan kebutuhan Hewan Peliharan Terlengkap</h2>
                 </div>
             </div>
-            <h1 class="text-2xl font-semibold mt-2">PT. SidoMakmur Jaya Josyes</h1>
-            <p class="text-lg text-slate-600 my-2">Jalan Ir. Sutami 36 Kentingan, Jebres, Surakarta, Jawa
+            <h1 class="text-2xl max-sm:text-sm font-semibold mt-2">PT. SidoMakmur Jaya Josyes</h1>
+            <p class="text-lg max-sm:text-xs text-slate-600 my-2">Jalan Ir. Sutami 36 Kentingan, Jebres, Surakarta, Jawa
                 Tengah, Indonesia 57126</p>
-            <p class="text-lg text-slate-600">Pusat Kebutuhan dan Perawatan Hewan Peliharan Kesayangan Anda No.
+            <p class="text-lg max-sm:text-xs text-slate-600">Pusat Kebutuhan dan Perawatan Hewan Peliharan Kesayangan Anda No.
                 1 di Surakarta</p>
             <p class="mt-2 flex items-center text-slate-600 font-semibold ">
                 <svg class="w-10 h-10 mr-4 text-green-500 dark:text-white float-left" aria-hidden="true" href=""
@@ -2624,13 +2622,13 @@
                     <path fill="currentColor"
                         d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z" />
                 </svg>
-                <a href="" class="hover:text-slate-400">+62 843 4567 4859</a>
+                <a href="" class="hover:text-slate-400 max-sm:text-xs">+62 843 4567 4859</a>
             </p>
         </div>
-        <div class="footer-toko w-[17%] px-10 py-6">
-            <h1 class="text-xl text-slate-800 font-semibold">Lapak Online</h1>
+        <div class="footer-toko w-[17%] px-10 max-sm:px-4 py-6">
+            <h1 class="text-xl max-sm:text-sm text-slate-800 font-semibold">Lapak Online</h1>
             <ul
-                class="pt-2 [&>li]:font-medium [&>li]:text-slate-500 hover:*:text-sky-500 active:*:text-sky-700 *:mb-1 *:inline-block">
+                class="pt-2 [&>li]:font-medium [&>li]:text-slate-500 hover:*:text-sky-500 active:*:text-sky-700 *:mb-1 *:inline-block max-sm:text-xs">
                 <li><a href="">Tokopedia</a></li>
                 <li><a href="">Shopee</a></li>
                 <li><a href="">Bukalapak</a></li>
@@ -2638,10 +2636,10 @@
                 <li><a href="">Blibli</a></li>
             </ul>
         </div>
-        <div class="footer-perusahaan w-[17%] px-10 py-6">
-            <h1 class="text-xl text-slate-800 font-semibold">Informasi</h1>
+        <div class="footer-perusahaan w-[17%] px-10 max-sm:px-4 py-6">
+            <h1 class="text-xl text-slate-800 font-semibold max-sm:text-sm">Informasi</h1>
             <ul
-                class="pt-2 [&>li]:font-medium [&>li]:text-slate-500 hover:*:text-sky-500 active:*:text-sky-700 *:mb-1 *:inline-block">
+                class="pt-2 [&>li]:font-medium [&>li]:text-slate-500 hover:*:text-sky-500 active:*:text-sky-700 *:mb-1 *:inline-block max-sm:text-xs">
                 <li><a href="">Profil</a></li>
                 <li><a href="">Riwayat Pesanan</a></li>
                 <li><a href="">Keranjang</a></li>
@@ -2650,10 +2648,10 @@
                 <li><a href="">Kebijakan Pengembalian Dana </a></li>
             </ul>
         </div>
-        <div class="footer-bio w-[17%] px-10 py-6">
-            <h1 class="text-xl text-slateslatext-slate-800 font-semibold">Perusahaan</h1>
+        <div class="footer-bio w-[17%] px-10 max-sm:px-4 py-6">
+            <h1 class="text-xl text-slateslatext-slate-800 font-semibold max-sm:text-sm">Perusahaan</h1>
             <ul
-                class="pt-2 [&>li]:font-medium [&>li]:text-slate-500 hover:*:text-sky-500 active:*:text-sky-700 *:mb-1 *:inline-block">
+                class="pt-2 [&>li]:font-medium [&>li]:text-slate-500 hover:*:text-sky-500 active:*:text-sky-700 *:mb-1 *:inline-block max-sm:text-xs">
                 <li><a href="">Tentang Kami</a></li>
                 <li><a href="">Blog</a></li><br>
                 <li><a href="">Karir</a></li>
